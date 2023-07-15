@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    font-size: 1.3rem; 
+}
+
+body::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(../assets/pexels-maxyne-barcel-10402282\ 1.png) no-repeat center center/cover ;
+    z-index: -1;
+    filter: brightness(50%);  
+}
+
+a {
+    text-decoration: none;
+    color: #e9d826;
+}
+
+a:hover {
+    color: aliceblue;
+    text-decoration: underline;
+}
+
+button {
+    color: white;
+    background-color: rgb(255,81,95);
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    border: transparent;
+    outline: none;
+}
+
+button:hover {
+    background-color: white;
+    color: rgb(255,81,95);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.logo {
+    /* border: 2px solid red; */
+    height: 2rem;
+    width: 6.5rem;
+    background: url(../assets/white-logo.png) no-repeat center center ;
+    background-size: cover;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 5rem;
+    color: #e9d826;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+    font-stretch: ultra-expanded;
+    font-weight: bold;
+    padding-bottom: 3rem;
+    /* padding-top: -30px; */
+}
+
+main button {
+    font-size: 25px;
+}
+
+section {
+}
+
+section .foot-logo {
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    background: url(../assets/scrool.png) no-repeat center center ;
+    background-size: cover;
+    bottom: 1rem;
+    right: 1rem;
+}
